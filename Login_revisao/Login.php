@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     <title>Login</title>
 </head>
 <body style="width: 100vw; height: 100vh;">
-    <div class="container" style="width: 500px; height: 300px;">
+    <div class="container">
         <form method="post" action="">
             <h2>Login</h2>
             <label for="usuario"><p>Usuário:</p></label>

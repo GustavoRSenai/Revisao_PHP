@@ -32,16 +32,13 @@ body {
 
 }
 
-.container {
-    max-width: 1200px;
-    padding: 20px;
-}
-
 /* Estilos para cabeçalhos */
 h2 {
     color: var(--secondary-color);
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
     text-align: center;
+    text-shadow: 1px 1px 3px gray;
 }
 
 /* Estilos para formulários */
@@ -52,12 +49,9 @@ label {
 }
 
 input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="file"],
-textarea,
-select {
-    width: 100%;
+input[type="password"]
+{
+    width: 350px;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ddd;
@@ -67,17 +61,21 @@ select {
 
 button {
     background-color: var(--primary-color);
+    width: 100px;
     color: #fff;
-    padding: 10px 25px;
+    padding: 13px 22px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s;
+    transition: 1s;
+    align-self: center;
+    margin-top: 10px;
+    box-shadow: 1.5px 1.5px 3px rgba(0, 0, 0, 0.53);
 }
 
-button:hover {
-    background-color: #521988;
+button:hover, a:hover {
+    background-color: #40116d;
     color: white;
 }
 .container{
@@ -94,9 +92,16 @@ button:hover {
 a{
     text-decoration: none;
     color: white;
-    background-color: black;
+    background-color: var(--primary-color);
     padding: 10px 25px;
     border-radius: 10px;
     box-shadow: 3px 3px 5px gray;
     margin-top: 20px;
+    transition: 1s;
+    box-shadow: 1.5px 1.5px 3px rgba(0, 0, 0, 0.53);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
